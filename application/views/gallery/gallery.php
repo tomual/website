@@ -7,22 +7,22 @@
     <div class="item">
         <h2><a href="<?php echo base_url('ezine') ?>">Ezine</a></h2>
         <p>Electronic magazine about video games</p>
-        <a href="<?php echo base_url('ezine') ?>"><img src="<?php echo base_url('img/gallery/ezine.png') ?>"></a>
+        <a href="<?php echo base_url('ezine') ?>"><img src="<?php echo base_url('images/gallery/ezine.png') ?>"></a>
     </div>
     <div class="item">
         <h2><a href="<?php echo base_url('gallery/illustration') ?>">Illustration</a></h2>
         <p>Digital drawings done on Paint Tool SAI</p>
-        <a href="<?php echo base_url('gallery/illustration') ?>"><img src="<?php echo base_url('img/gallery/illustration.png') ?>"></a>
+        <a href="<?php echo base_url('gallery/illustration') ?>"><img src="<?php echo base_url('images/gallery/illustration.png') ?>"></a>
     </div>
     <div class="item">
         <h2><a href="<?php echo base_url('gallery/photo') ?>">Photo</a></h2>
         <p>Some photos I've taken</p>
-        <a href="<?php echo base_url('gallery/photo') ?>"><img src="<?php echo base_url('img/gallery/photos.png') ?>"></a>
+        <a href="<?php echo base_url('gallery/photo') ?>"><img src="<?php echo base_url('images/gallery/photo.png') ?>"></a>
     </div>
     <div class="item">
         <h2><a href="<?php echo base_url('gallery/sites') ?>">Sites</a></h2>
         <p>Sites that I've worked on</p>
-        <a href="<?php echo base_url('gallery/sites') ?>"><img src="<?php echo base_url('img/gallery/sites.png') ?>"></a>
+        <a href="<?php echo base_url('gallery/sites') ?>"><img src="<?php echo base_url('images/gallery/sites.png') ?>"></a>
     </div>
 </section>
 

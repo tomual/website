@@ -4,7 +4,7 @@
 <?php if( $post ): ?>
     <h1><?php echo $post->title ?></h1>
     <div class="post-info">
-        <span class="date"><?php echo date('j F, Y \a\t g:ia', strtotime($post->created)) ?></span>
+        <span class="date"><?php echo date('j F Y \a\t H:ia', strtotime($post->publish_date)) ?></span>
     </div>
     <div class="post-content">
         <?php echo $post->content ?>

@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 # REMEMBE HTACCESS TOO
 $config['base_url'] = 'http://localhost/website/';
-// $config['base_url'] = 'https://tomual.com/';
+//$config['base_url'] = 'https://tomual.com/';
 
 /*
 |--------------------------------------------------------------------------

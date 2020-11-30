@@ -1,19 +1,17 @@
 <?php $this->load->view('header') ?>
-
-<a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
-
 <h1>Gone Home</h1>
 <br />
-<img src="<?php echo base_url('img/material/layout/gone.png') ?>" class="border">
+<img src="<?php echo base_url('images/material/layout/gone.png') ?>" class="center layout-thumbnail">
 <p>
 <br />
 A simple white layout witha customiseable banner image. Navigation on right bar. Suggested to be used as a blog layout.
 </p>
+<br />
 <p class="center">
 <a href="<?php echo base_url('demo/material/layout/gone-home/demo.html') ?>">Preview</a>
 </p>
 <h2>HTML</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 	&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 	&lt;head&gt;
 	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
@@ -48,7 +46,7 @@ A simple white layout witha customiseable banner image. Navigation on right bar.
 	  margin-left: 110px;
 	}
 	header {
-	  background-image: url(http://colourlovers.com.s3.amazonaws.com/img/patterns/3481/3481412.png?1363789348);
+	  background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3481/3481412.png?1363789348);
 	  height: 200px;
 	  width: 100%;
 	  border: 1px solid #000;
@@ -141,5 +139,6 @@ A simple white layout witha customiseable banner image. Navigation on right bar.
 </textarea>
 
 <p>Copy and paste the code above to your HTML file, or the template/theme edit text box.</p>
+<br>
 <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
 <?php $this->load->view('footer') ?>

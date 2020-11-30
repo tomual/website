@@ -27,18 +27,6 @@ class Stuff extends CI_Controller {
         $this->load->view('stuff/emoticons');
     }
 
-    public function toybox($folder = null)
-    {
-        $images = array();
-        if($folder) {
-            $directory = "/home/tomualco/public_html/img/toybox/$folder/";
-            // $directory = "C:/wamp/www/tomual/img/toybox/$folder/";
-            $images = glob($directory . "*.{jpg,png,gif}", GLOB_BRACE);
-            set_meta('title', 'Toybox');
-        }
-        $this->load->view('stuff/toybox', compact('images'));
-    }
-
     public function unsupported_value_type_error()
     {
         set_meta('title', '"Unsupported Value Type" Error');
@@ -71,13 +59,9 @@ class Stuff extends CI_Controller {
         }
     }
 
-    public function php_blog_walkthrough_with_codeigniter($chapter = 1)
+    public function php_blog_walkthrough_with_codeigniter()
     {
-        if($chapter < 1 || $chapter > 3) {
-            $chapter = 1;
-        }
-        set_meta('title', 'PHP Blog Walkthrough with CodeIgniter 3 - Chapter ' . $chapter);
-        $this->load->view('stuff/php_blog_walkthrough_with_codeigniter_' . $chapter);
+        $this->load->view('stuff/php_blog_walkthrough_with_codeigniter');
     }
 
     public function setting_up_a_website_walkthrough()

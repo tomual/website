@@ -21,11 +21,10 @@ class Blog extends CI_Controller {
         $this->load->helper('html');
         $this->load->helper('post');
 
-        $latest =  $this->posts_model->get_latest();
         $posts = $this->posts_model->get_posts();
         $pagination = paginate($posts);
         set_meta('title', 'Blog');
-        $this->load->view('blog/all', compact('posts', 'pagination', 'latest'));
+        $this->load->view('blog/all', array('posts' => $posts, 'pagination' => $pagination));
     }
 
     public function gogo() 
@@ -89,7 +88,7 @@ class Blog extends CI_Controller {
 
                 // Update the post
                 $this->posts_model->update($post_id, $data);
-                redirect("blog/gogogo/$post_id");
+                redirect("blog/view/$post_id");
             }
             else
             {
@@ -114,11 +113,6 @@ class Blog extends CI_Controller {
             set_meta('title', 'Post Not Found');
         }
         $this->load->view('blog/view', array('post' => $post));
-    }
-
-    public function archive() {
-        $archive = $this->posts_model->get_archive();
-        $this->load->view('blog/archive', compact('archive'));
     }
 
 }

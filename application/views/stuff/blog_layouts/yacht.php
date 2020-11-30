@@ -1,19 +1,17 @@
 <?php $this->load->view('header') ?>
-
-<a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
-
 <h1>Yacht</h1>
 <br />
-<img src="<?php echo base_url('img/material/layout/yacht.png') ?>" class="border">
+<img src="<?php echo base_url('images/material/layout/yacht.png') ?>" class="center layout-thumbnail">
 <p>
 <br />
 A one-column simple blog layout with an ocean background. Small navigation menu on the left.
 </p>
+<br />
 <p class="center">
 <a href="<?php echo base_url('demo/material/layout/yacht/demo.html') ?>">Preview</a>
 </p>
 <h2>HTML</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head&gt;
 &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
@@ -123,8 +121,9 @@ nav a:hover{
 <h2>Images</h2>
 
 <br />
-<img src="<?php echo base_url('img/material/layout/yacht/yacht.png') ?>">
+<img src="<?php echo base_url('images/material/layout/yacht/yacht.png') ?>">
 <br /><br />
-<img src="<?php echo base_url('img/material/layout/yacht/bg.png') ?>">
+<img src="<?php echo base_url('images/material/layout/yacht/bg.png') ?>">
+<br>
 <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
 <?php $this->load->view('footer') ?>

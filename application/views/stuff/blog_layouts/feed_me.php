@@ -1,19 +1,17 @@
 <?php $this->load->view('header') ?>
-
-<a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
-
 <h1>Feed Me</h1>
 <br />
-<img src="<?php echo base_url('img/material/layout/feedme.png') ?>" class="border">
+<img src="<?php echo base_url('images/material/layout/feedme.png') ?>" class="center layout-thumbnail">
 <p>
 <br />
 A one-column layout suitable for any website. Navigation at the top, customiseable title on the collar of the cat.
 </p>
+<br />
 <p class="center">
 <a href="<?php echo base_url('demo/material/layout/feed-me/demo.html') ?>">Preview</a>
 </p>
 <h2>HTML</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head&gt;
 
@@ -162,10 +160,11 @@ Feed Me
 
 <h2>Images</h2>
 <br />
-<img src="<?php echo base_url('img/material/layout/feedme/head.png') ?>">
+<img src="<?php echo base_url('images/material/layout/feedme/head.png') ?>">
 <br /><br />
-<img src="<?php echo base_url('img/material/layout/feedme/bg.png') ?>">
+<img src="<?php echo base_url('images/material/layout/feedme/bg.png') ?>">
 <br /><br />
-<img src="<?php echo base_url('img/material/layout/feedme/menubg.png') ?>">
+<img src="<?php echo base_url('images/material/layout/feedme/menubg.png') ?>">
+<br>
 <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
 <?php $this->load->view('footer') ?>

@@ -1,19 +1,17 @@
 <?php $this->load->view('header') ?>
-
-<a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
-
 <h1>Hyperion</h1>
 <br />
-<img src="<?php echo base_url('img/material/layout/hyperion.png') ?>" class="border">
+<img src="<?php echo base_url('images/material/layout/hyperion.png') ?>" class="center layout-thumbnail">
 <p>
 <br />
 Minimalistic small layout. Title on to left, navigation on top right. A meteor moves in the top center. Page links in the bottom right.
 </p>
+<br />
 <p class="center">
 <a href="<?php echo base_url('demo/material/layout/hyperion/demo.html') ?>">Preview</a>
 </p>
 <h2>HTML</h2>
-<textarea class="code" rows="10" spellcheck="false">	&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<textarea rows="10" spellcheck="false">	&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head&gt;
 &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
@@ -135,7 +133,7 @@ a:hover {
 	</textarea>
 
 <h2>Blogger</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html&gt;
 &lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
   &lt;head&gt;
     &lt;title&gt;
@@ -1226,8 +1224,9 @@ color: #000;
 <h2>Images</h2>
 
 <br />
-<img src="<?php echo base_url('img/material/layout/hyperion/meteor.gif') ?>">
+<img src="<?php echo base_url('images/material/layout/hyperion/meteor.gif') ?>">
 <br /><br />
-<img src="<?php echo base_url('img/material/layout/hyperion/bg.png') ?>">
+<img src="<?php echo base_url('images/material/layout/hyperion/bg.png') ?>">
+<br>
 <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
 <?php $this->load->view('footer') ?>

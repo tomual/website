@@ -1,7 +1,5 @@
 <?php $this->load->view('header') ?>
 
-<a href="<?php echo base_url('stuff') ?>" class="back-link">&laquo; Back to Stuff</a>
-
 <h1>ACPI Error: Method parse/execution failed</h1>
 
 <p>Upon installing Linux you may find this error spamming yoursyslog, messages and kern.log:</p>
@@ -11,7 +9,7 @@ ACPI Error: Method parse/execution failed [\_GPE._L06] (Node ffff8802270cdf50), 
 
 ACPI Exception: AE_NOT_FOUND, while evaluating GPE method [_L06] (20150930/evgpe-592)</textarea>
 
-<a href="<?php echo base_url('img/extra/acpi-error-spam-linux.png') ?>" class="thumbnail"><img src="<?php echo base_url('img/extra/acpi-error-spam-linux.png') ?>" class="border" alt="ACPI Error Spamming in logs on Linux"/></a>
+<img src="<?php echo base_url('images/extra/acpi-error-spam-linux.png') ?>" alt="ACPI Error Spamming in logs on Linux"/>
 
 <p>This error seems to be harmless - it was mistaken as the cause of boot problems when I tried some incompatible distributions like Debian, but later found out the error happens anyway on working distributions.</p>
 

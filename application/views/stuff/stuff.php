@@ -36,10 +36,33 @@
         <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="button">View Layouts &raquo;</a>
     </div>
 
-    <div class="item">
+    <div class="toybox">
         <h2>Toybox</h2>
-        <p>Various accent graphics for you to use.</p>
-        <a href="<?php echo base_url('stuff/toybox') ?>">Go to Toybox &raquo;</a>
+        <img src=""><img src=""><img src=""><br>
+        <ul>
+            <li><a href="">Cats</a></li>
+            <li><a href="">Dogs</a></li>
+            <li><a href="">Boys</a></li>
+            <li><a href="">Girls</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Breakfast</a></li>
+            <li><a href="">Lunch</a></li>
+            <li><a href="">Dinner</a></li>
+            <li><a href="">Dessert</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Office</a></li>
+            <li><a href="">Lounge</a></li>
+            <li><a href="">Kitchen</a></li>
+            <li><a href="">Bathroom</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Programming</a></li>
+            <li><a href="">Plants</a></li>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Season</a></li>
+        </ul>
     </div>
 
 </section>  

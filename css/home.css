@@ -1,10 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 14px;
-}
-
-a {
-    color: blue;
 }
 
 h1 {
@@ -15,13 +11,12 @@ h1 {
 }
 
 h1 small {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 10px;
     float: right;
     position: relative;
     top: 22px;
     opacity: 0.75;
-    font-weight: 400;
 }
 
 h1 small span {
@@ -100,9 +95,6 @@ nav {
     font-size: 12px;
     padding: 10px;
     margin-top: 1rem;
-    height: 105px;
-    overflow: hidden;
-    line-height: 1.5rem;
 }
 
 .whats-new ul {
@@ -120,13 +112,4 @@ footer {
     text-align: right;
     padding-top: 0.5rem;
     border-top: 1px dotted #000;
-}
-
-footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }

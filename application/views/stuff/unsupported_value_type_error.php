@@ -1,12 +1,10 @@
 <?php $this->load->view('header') ?>
 
-<a href="<?php echo base_url('stuff') ?>" class="back-link">&laquo; Back to Stuff</a>
-
 <h1>"Unsupported value type" Error on Linux</h1>
 
 <p>When using Linux, you may come across an error similar to this spamming your system logs:</p>
 
-<textarea class="code" rows="1" cols="40">[drm:drm_wait_vblank [drm]] *ERROR* Unsupported type value 0x8f, supported mask 0x7400003f</textarea>
+<textarea class="code" rows="2" cols="40">[drm:drm_wait_vblank [drm]] *ERROR* Unsupported type value 0x8f, supported mask 0x7400003f</textarea>
 
 <p>Though seemingly harmless, it can take up a lot of disk space if left alone.</p>
 
@@ -18,7 +16,7 @@
 
 <p>With this cause, the error would just be a constant spam no matter what was happening on the computer.</p>
 
-<a href="<?php echo base_url('img/extra/unsupported-value-type-error-linux.png') ?>" class="thumbnail"><img src="<?php echo base_url('img/extra/unsupported-value-type-error-linux.png') ?>" class="border" alt="Unsupported Value Type Error Linux" /></a>
+<img src="<?php echo base_url('images/extra/unsupported-value-type-error-linux.png') ?>" alt="Unsupported Value Type Error Linux" />
 
 <p>The solution in my case was to use Unity (Ubuntu) or GNOME Classic (Metacity). If those do not solve it I would recommend checking others out too.</p>
 
@@ -30,7 +28,7 @@
 
 <p>The error appeared for me when I was using the browser <i>Brave</i>. I found (using tail -f /var/log/systemlog) The error would spam when making mouse movements over page elements.</p>
 
-<a href="<?php echo base_url('img/extra/unsupported-error-spam-when-moving-mouse.gif') ?>" class="thumbnail"><img src="<?php echo base_url('img/extra/unsupported-error-spam-when-moving-mouse.gif') ?>" class="border" alt="Unsupported Value Type Error on Cursor Move" /></a>
+<img src="<?php echo base_url('images/extra/unsupported-error-spam-when-moving-mouse.gif') ?>" alt="Unsupported Value Type Error on Cursor Move" />
 
 <p>It's assumed this was because of the custom UI that Brave has - I could not find a way to stop it, and used an alternative browser.</p>
 

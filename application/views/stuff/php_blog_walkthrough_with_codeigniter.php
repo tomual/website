@@ -1,7 +1,5 @@
 <?php $this->load->view('header') ?>
 
-<a href="<?php echo base_url('stuff') ?>" class="back-link">&laquo; Back to Stuff</a>
-
 <h1>PHP Blog Walkthrough with CodeIgniter</h1>
 
 <p>The following is a walkthrough on how to build a blog in CodeIgniter 3.1</p>

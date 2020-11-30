@@ -1,44 +1,65 @@
-<?php $this->load->view('header') ?>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>tomual</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1>Welcome to my site</h1>
-<p>Updates:</p>
-<div>
-    <small>
-        <ul class="updates-list">
-            <li><b>2020-09-19</b><br>Toolip - Web dev tools</li><br>
-            <li><b>2020-08-31</b><br>Blog · Layout update</li><br>
-            <li><b>2020-07-08</b><br>Blog · Discord Bot</li><br>
-            <li><b>2020-04-25</b><br>Blog · CodeIgniter 4</li><br>
-            <li><b>2020-04-24</b><br>Site to CodeIgniter 4</li><br>
-            <li><b>2020-03-15</b><br>Blog · React native app</li><br>
-            <li><b>2019-12-27</b><br>Blog · Idle mobile game</li><br>
-            <li><b>2019-11-23</b><br>Blog · Artstation wp</li><br>
-            <li><b>2019-09-25</b><br>About · Update</li><br>
-            <li><b>2019-07-30</b><br>Software · 3d game</li><br>
-            <li><b>2019-06-23</b><br>Software · Zuchan</li><br>
-            <li><b>2019-05-22</b><br>Blog · Not some cats</li><br>
-            <li><b>2019-03-04</b><br>Blog · Stripe online store</li><br>
-            <li><b>2019-02-14</b><br>Blog · Netsuite php tba</li><br>
-            <li><b>2019-01-13</b><br>Timeline update</li><br>
-            <li><b>2019-01-11</b><br>Navigation redo</li><br>
-            <li><b>2018-11-21</b><br>Blog · Pixijs game</li><br>
-            <li><b>2018-10-28</b><br>Blog · Cocobox</li><br>
-            <li><b>2018-10-05</b><br>Gallery · New illustration</li><br>
-            <li><b>2018-09-27</b><br>Blog · Cuteigniter</li><br>
-            <li><b>2018-07-31</b><br>Blog · Browser game</li><br>
-            <li><b>2018-06-23</b><br>Tttt · New issue</li><br>
-            <li><b>2018-06-15</b><br>Toybox · Drinks</li><br>
-            <li><b>2018-05-28</b><br>Toybox page</li><br>
-            <li><b>2018-05-17</b><br>Software · Koi-auth</li> <br>
-            <li><b>2018-04-28</b><br>Software · Churro</li> <br>
-            <li><b>2018-04-16</b><br>Bookmarks page</li><br>
-            <li><b>2018-02-11</b><br>Timeline update</li><br>
-            <li><b>2018-01-31</b><br>Blog · 2018</li> <br>
-            <li><b>2017-12-30</b><br>New layout</li><br>
-            <li><b>2017-11-25</b><br>Blog // Firefox quantum</li> <br>
-            <li><b>2017-11-07</b><br>Site to codeingiter</li> <br>
-        </ul>
-    </small>
-</div>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
 
-<?php $this->load->view('footer') ?>
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+        <link rel="stylesheet" href="<?php echo base_url('css/normalize.css') ?>">
+        <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/home.css') ?>">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>tomual <small>personal site and portfolio <span>🗗</span></small></h1>
+                <img src="<?php echo base_url('images/banner.png') ?>">
+            </header>
+            <nav>
+                <p>↓ select a menu item below.</p>
+                <ul>
+                    <!-- <li><a href="<?php echo base_url() ?>">home</a></li> -->
+                    <li><a href="<?php echo base_url('software') ?>">software</a></li>
+                    <li><a href="<?php echo base_url('stuff') ?>">stuff</a></li>
+                    <li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+                    <li><a href="<?php echo base_url('blog') ?>">blog</a></li>
+                    <li><a href="<?php echo base_url('about') ?>">about</a></li>
+                </ul>
+            </nav>
+            <section class="whats-new">
+                <h2>what's new</h2>
+                <br>
+                <ul>
+                    <li>2017-12-07: soooon ...</li>
+                    <li>2017-11-25: blog // firefox quantum</li>
+                    <li>2017-11-07: site to codeingiter</li>
+                </ul>
+            </section>
+            <footer>
+                copyright &copy;  tomual 2017 // contact
+            </footer>
+        </div>
+
+
+        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

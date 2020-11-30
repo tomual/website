@@ -13,49 +13,25 @@ class Posts_model extends CI_Model {
         $this->db->insert('posts', $data);
     }
 
-    public function update($id, $data)
+    public function update($post_id, $data)
     {
-        $this->db->where('id', $id);
+        $this->db->where('post_id', $post_id);
         $this->db->update('posts', $data);
     }
 
-    public function get_post($id)
+    public function get_post($post_id)
     {
-        $this->db->where('posts.id', $id);
+        $this->db->where('posts.post_id', $post_id);
         $result = $this->db->get('posts')->first_row();
         return $result;
     }
 
     public function get_posts()
     {
-        $this->db->order_by('created', 'DESC');
-        $this->db->order_by('id', 'DESC');
+        $this->db->order_by('publish_date', 'DESC');
+        $this->db->order_by('post_id', 'DESC');
+        $this->db->group_by('post_id');
         $results = $this->db->get('posts')->result();
         return $results;
-    }
-
-    public function get_latest()
-    {
-        $this->db->order_by('created', 'DESC');
-        $this->db->order_by('id', 'DESC');
-        $this->db->group_by('id');
-        $this->db->limit('5');
-        $results = $this->db->get('posts')->result();
-        return $results;
-    }
-
-    public function get_archive() {
-        $this->db->select('id, title, created');
-        $this->db->order_by('created', 'DESC');
-        $results = $this->db->get('posts')->result();
-
-        $archive = array();
-        foreach ($results as $post) {
-            $year = date('Y', strtotime($post->created));
-            $month = date('M', strtotime($post->created));
-            $archive[$year][$month][] = $post;
-        }
-
-        return $archive;
     }
 }

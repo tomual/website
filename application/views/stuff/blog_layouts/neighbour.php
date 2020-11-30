@@ -1,19 +1,17 @@
 <?php $this->load->view('header') ?>
-
-<a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
-
 <h1>Neighbour</h1>
 <br />
-<img src="<?php echo base_url('img/material/layout/neighbour.png') ?>" class="border">
+<img src="<?php echo base_url('images/material/layout/neighbour.png') ?>" class="center layout-thumbnail">
 <p>
 <br />
 A clean, white blog layout. A black and white banner image is suggested. Uses the date of post as the post title. Comments are not taken into account.
 </p>
+<br />
 <p class="center">
 <a href="<?php echo base_url('demo/material/layout/neighbour/demo.html') ?>">Preview</a>
 </p>
 <h2>HTML</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head&gt;
 &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
@@ -100,7 +98,7 @@ article {
 	</textarea>
 
 <h2>Blogger</h2>
-<textarea class="code" rows="10" spellcheck="false">&lt;!DOCTYPE html&gt;
+<textarea rows="10" spellcheck="false">&lt;!DOCTYPE html&gt;
 &lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
   &lt;head&gt;
 
@@ -1043,8 +1041,9 @@ article {
 
 <h2>Images</h2>
 <br />
-<img src="<?php echo base_url('img/material/layout/neighbour/banner.jpg') ?>">
+<img src="<?php echo base_url('images/material/layout/neighbour/banner.jpg') ?>">
 <br /><br />
-<img src="<?php echo base_url('img/material/layout/neighbour/headerbg.png') ?>">
+<img src="<?php echo base_url('images/material/layout/neighbour/headerbg.png') ?>">
+<br>
 <a href="<?php echo base_url('stuff/blog-layouts') ?>" class="back-link">&laquo; Back to Layouts</a>
 <?php $this->load->view('footer') ?>
