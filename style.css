@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+html { 
+	height: 100%;
+}
+body {
+	background-color: #486B9F;
+	color: #3C5884;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 50px;
+	background-image: url(../images/bg.png);
+	height: 100%;
+	font-size: 9px;
+	font-family: Volter, sans-serif;
+	line-height: 20px;
+	background-repeat: repeat-y;
+	background-position: 50px;
+}
+
+img {
+	max-width: 100%;
+}
+section {
+	height: 100%;
+	width: 350px;
+	margin-left: 206px;
+}
+nav {
+	position:fixed;
+	width: 162px;
+	float: left;
+}
+
+ ul {
+	list-style-type: square;
+	margin: 0;
+	padding-left: 1rem;
+}
+
+ol { 
+	margin: 0;
+	padding-left: 1rem;
+}
+
+li a {
+	text-decoration:none;
+	color: #3C5884;
+}
+
+li a:hover {
+	opacity: 0.5;
+}
+
+section p {
+	margin:0;
+	width: 360px;
+	margin-bottom: 20px;
+}
+
+section textarea, section input[type=text] {
+	width: 210px;
+	border: 1px solid #3C5884;
+	background-color: #DEE8F5;
+	color: #3C5884;
+	font-size: 9px;
+	font-family: Volter, Verdana;
+	line-height: 15px;
+	padding: 5px;
+	min-height: 15px;
+	margin-bottom: 10px;
+
+}
+
+section textarea.oneliner {
+	width: 340px;
+}
+
+nav li a {
+	color: #FFF;
+}
+h1, h2 {
+	font-size: 9px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h1 a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 9px;
+	margin-left: 25px;
+	letter-spacing: 1px;
+}
+
+
+
+h2 {
+	margin-top: 2rem;
+}
+
+#guide {
+	position: absolute;
+	top: 117px;
+	bottom: 67px;
+	overflow: auto;
+	width: 158px;
+}
+
+#side {
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 0px;
+}
+ 
+::-webkit-scrollbar-track-piece  {
+	background-color: #B9CCF0;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color: #486B9F;
+}
+
+a {
+	color: #3C5884;
+}
+
+.updates {
+	height: 57px;
+	overflow: hidden;
+}
+
+.back-link {
+	display: block;
+}
+
+.background-preview {
+    display: block;
+    position: absolute;
+    left: 681px;
+    top: 0px;
+    bottom: -600px;
+    right: 0px;
+}
+
+.thumbnail > div {
+    height: 85px;
+    width: 145px;
+    border: 1px dashed #000;
+    vertical-align: middle;
+    background-size: 160%;
+    background-position: top;
+    margin: 1rem 0;
+}

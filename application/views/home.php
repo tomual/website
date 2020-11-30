@@ -1,65 +1,81 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>tomual</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tomual - personal site and laboratory</title>
+	<style>
+		body {
+			background-color: #486B9F;
+			margin: 0px;
+			padding: 0px;
+		}
+		.cover {
+			width: 334px;
+			height: 246px;
+			background-image: url(/cuteigniter-master/img/covers/1.png);
+			position: relative;
+			top: -209px;
+			left: 173px;
+		}
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
+		.main {
+			background-image: url(img/main.png);
+			background-repeat: no-repeat;
+			height: 312px;
+			width: 530px;
+			position: absolute;
+			top: 50%;
+			margin-top: -156px;
+			left:50%;
+			margin-left: -265px;
+		}
 
-        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		.menu {
+			position: relative;
+			left: 17px;
+			top: 86px;
+			height: 250px;
+			width: 150px;
+		}
 
-        <link rel="stylesheet" href="<?php echo base_url('css/normalize.css') ?>">
-        <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/home.css') ?>">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>tomual <small>personal site and portfolio <span>🗗</span></small></h1>
-                <img src="<?php echo base_url('images/banner.png') ?>">
-            </header>
-            <nav>
-                <p>↓ select a menu item below.</p>
-                <ul>
-                    <!-- <li><a href="<?php echo base_url() ?>">home</a></li> -->
-                    <li><a href="<?php echo base_url('software') ?>">software</a></li>
-                    <li><a href="<?php echo base_url('stuff') ?>">stuff</a></li>
-                    <li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
-                    <li><a href="<?php echo base_url('blog') ?>">blog</a></li>
-                    <li><a href="<?php echo base_url('about') ?>">about</a></li>
-                </ul>
-            </nav>
-            <section class="whats-new">
-                <h2>what's new</h2>
-                <br>
-                <ul>
-                    <li>2017-12-07: soooon ...</li>
-                    <li>2017-11-25: blog // firefox quantum</li>
-                    <li>2017-11-07: site to codeingiter</li>
-                </ul>
-            </section>
-            <footer>
-                copyright &copy;  tomual 2017 // contact
-            </footer>
-        </div>
+		.menu a {
+			background-repeat: no-repeat;
+			display: block;
+			height: 22px;
+			width: 138px;
+			margin-bottom: 8px;
+		}
 
+		.menu a:hover {
+			background-position: 1px 1px;
+		}
 
-        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+		.menu li {
+			width: 0px;
+			overflow: hidden;
+		}
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="menu">
+			<ul>
+				<a href="<?php echo base_url('material') ?>" style="background-image: url('<?php echo base_url('img/btn material.png') ?>')"><li>material</li></a>
+				<a href="<?php echo base_url('software') ?>" style="background-image: url('<?php echo base_url('img/btn software.png') ?>')"><li>software</li></a>
+				<a href="<?php echo base_url('notes') ?>" style="background-image: url('<?php echo base_url('img/btn notes.png') ?>')"><li>notes</li></a>
+				<a href="<?php echo base_url('blog') ?>" style="background-image: url('<?php echo base_url('img/btn blog.png') ?>')"><li>blog</li></a>
+				<a href="<?php echo base_url('ezine') ?>" style="background-image: url('<?php echo base_url('img/btn ezine.png') ?>')"><li>ezine</li></a>
+				<a href="<?php echo base_url('about') ?>" style="background-image: url('<?php echo base_url('img/btn about.png') ?>')"><li>about</li></a>
+				<a href="<?php echo base_url('') ?>" disabled style="opacity: 0.5; background-image: url('<?php echo base_url('img/btn guestbook.png') ?>')"><li>guestbook</li></a>
+			</ul>
+		</div>
+		<div class="cover">
+			<div class="updates"></div>
+		</div>
+	</div>
+</body>
 </html>

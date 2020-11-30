@@ -1,10 +1,10 @@
 // BACKGROUNDS
 
 $(".tiled").click(function(){
-    $('body').css("background", "url(" + $(this).attr('src') + ") repeat fixed");
+    $('.background-preview').css("background", "url(" + $(this).attr('src') + ") repeat fixed");
 });
 $("#reset").click(function(){
-    $('body').css("background", "#FFF");
+    $('.background-preview').css("background", "transparent");
 });
 
 // BULLETS

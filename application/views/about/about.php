@@ -1,7 +1,12 @@
 <?php $this->load->view('header') ?>
-
-
-<section class="about">
+<nav id="side">
+    <a href="<?php echo base_url('about') ?>"><img src="<?php echo base_url('img/header about.png') ?>"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
+    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+</nav>
+<section>
+    <img src="<?php echo base_url('img/sectiontop.png') ?>" style="position: absolute; top: -1px; left: 218px;">
+    <img src="<?php echo base_url('img/pick.png') ?>" style="padding-top: 50px;"> 
     <h1>About</h1>
     <p>About the website and webmaster</p>
 
@@ -9,17 +14,21 @@
     <table border="1">
         <tbody>
             <tr>
-                <td>Language</td>
-                <td>PHP / HTML5 / CSS3 / jQuery</td>
+                <th>Framework</th>
+                <td>CodeIgniter 3</td>
             </tr>
             <tr>
-                <td>Host</td>
+                <th>Host</th>
                 <td>Reclaim Hosting</td>
             </tr>
             <tr>
-                <td>Sitemap</td>
-                <td><a href="">Go to sitemap &raquo;</a></td>
+                <th>Language</th>
+                <td>PHP 7 / HTML5 / CSS3 / jQuery</td>
             </tr>
+<!--             <tr>
+                <th>Sitemap</th>
+                <td><a href="">Go to sitemap &raquo;</a></td>
+            </tr> -->
         </tbody>
     </table>
 
@@ -27,58 +36,56 @@
     <table border="1">
         <tbody>
             <tr>
-                <td>Name</td>
-                <td>tomual</td>
+                <th>Age</th>
+                <td>27</td>
             </tr>
             <tr>
-                <td>Birth</td>
-                <td>1993 AUG @ Tokyo, Japan</td>
+                <th>Location</th>
+                <td>Australia</td>
             </tr>
             <tr>
-                <td>Nationality</td>
-                <td>Australian</td>
-            </tr>
-            <tr>
-                <td>Location</td>
-                <td>Nebraska, United States of America</td>
-            </tr>
-            <tr>
-                <td>Occupation</td>
-                <td>PHP Developer</td>
-            </tr>
-            <tr>
-                <td colspan="2"><a href="">Github</a></td>
-            </tr>
-            <tr>
-                <td colspan="2"><a href="">Steam</a></td>
+                <th>Occupation</th>
+                <td>Software Developer</td>
             </tr>
         </tbody>
     </table>
+
+    <a target="_blank" href="https://steamcommunity.com/id/tomual/">[Steam]</a>
+    <a target="_blank" href="https://github.com/tomual">[Github]</a>
+
+    <br>
 
     <h2>Other</h2>
     <table border="1">
         <tbody>
             <tr>
-                <td>Computer</td>
-                <td>i7 / 8GB / GTX 760</td>
+                <th>PC</th>
+                <td>AMD Ryzen 7 / 8GB / GTX 1050 Ti</td>
             </tr>
             <tr>
-                <td>Peripheral</td>
+                <th>Peripheral</th>
                 <td>Vortex Race 3 / Logitech G300 / QuietComfort 25 / Wacom Bamboo Fun</td>
             </tr>
             <tr>
-                <td>Software</td>
-                <td>Sublime Text / Paint Tool SAI / Chrome / wamp / Adobe Fireworks</td>
+                <th>Software</th>
+                <td>Sublime Text 3 / Paint Tool SAI / Firefox / XAMPP / Adobe Fireworks</td>
             </tr>
         </tbody>
     </table>
 
     <h2>Timeline</h2>
-    <p>Summary of some development related things throughout the years.</p>
+    <p>Summary of some development related things throughout the years.<br>
+    <a href="<?php echo base_url('timeline/#2018') ?>" class="button">View Timeline</a></p>
+
+    <h2>Bookmarks</h2>
+    <p>A collection of sites that I frequent.<br>
+    <a href="<?php echo base_url('about/bookmarks') ?>" class="button">View Bookmarks</a></p>
+
+    <h2>Contact</h2>
+    <p>To send feedback, suggestions or feedback, please use this <a href="<?php echo base_url('samband') ?>">contact form</a>.</p>
 
 </section>
 
 
-<a href="<?php echo base_url('timeline/#2017') ?>" class="button">Visit Page</a>
 
 <?php $this->load->view('footer') ?>

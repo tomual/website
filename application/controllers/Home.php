@@ -1,25 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
 
-    public function index()
-    {
-        $this->load->view('home');
-    }
-
-    public function login()
-    {
-        if($this->input->method(TRUE) == 'POST')
-        {
-            $key = $this->input->post('key');
-            if($key == 'jungkookie')
-            {
-                $this->session->set_userdata('logged_in', TRUE);
-                redirect('blog/gogo');
-            }
-            sleep(15);
-        }
-        $this->load->view('login');
-    }
+	public function index()
+	{
+        set_meta('title', 'Welcome');
+		$this->load->view('home');
+	}
 }

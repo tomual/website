@@ -8,4 +8,9 @@ class About extends CI_Controller {
         set_meta('title', 'About');
         $this->load->view('about/about');
     }
+
+    public function bookmarks() {
+    	set_meta('title', 'Bookmarks');
+    	$this->load->view('about/bookmarks');
+    }
 }

@@ -3,6 +3,7 @@
 application/cache/*
 !application/cache/index.html
 
+system/*
 application/logs/*
 !application/logs/index.html
 
@@ -16,11 +17,6 @@ user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
 
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
-
 ## Sublime Text cache files
 *.tmlanguage.cache
 *.tmPreferences.cache
@@ -29,3 +25,8 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
+
+timeline/
+downloads/
+img/*/
+ezine/
