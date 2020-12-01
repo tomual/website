@@ -24,20 +24,20 @@
     <img src="<?php echo base_url('img/sectiontop.png') ?>" style="position: absolute; top: -1px; left: 218px;">
     <img src="<?php echo base_url('img/pick.png') ?>" style="padding-top: 50px;"> 
 
-<h1>Emoticons</h1>
-<p>HTML list-style-image images for bullet point lists.</p>
-<div class="center">
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-bear-smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons.zip') ?>">Download</a>
-<br><br>
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-cat-pokemon-smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-cat-smilies-emoticons.zip') ?>">Download</a>
-<br><br>
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-emoji--smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-emoji-smilies-emoticons.zip') ?>">Download</a>
-<br><br>
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-emoji--smilies-emoticons-white.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-emoji-smilies-emoticons-white.zip') ?>">Download</a>
-<br><br>
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-bear-smilies-emoticons-2.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons-2.zip') ?>">Download</a>
-<br><br>
-<img src="<?php echo base_url('img/material/emoticon/cute-pixel-cat-pokemon-smilies-emoticons-2.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons-2.zip') ?>">Download</a>
-</div>
-
+    <h1>Emoticons</h1>
+    <p>HTML list-style-image images for bullet point lists.</p>
+    <div class="center">
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-bear-smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons.zip') ?>">Download</a>
+        <br><br>
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-cat-pokemon-smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-cat-smilies-emoticons.zip') ?>">Download</a>
+        <br><br>
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-emoji--smilies-emoticons.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-emoji-smilies-emoticons.zip') ?>">Download</a>
+        <br><br>
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-emoji--smilies-emoticons-white.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-emoji-smilies-emoticons-white.zip') ?>">Download</a>
+        <br><br>
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-bear-smilies-emoticons-2.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons-2.zip') ?>">Download</a>
+        <br><br>
+        <img src="<?php echo base_url('img/material/emoticon/cute-pixel-cat-pokemon-smilies-emoticons-2.png') ?>" class="dotted pixel">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/emoticons/cute-pixel-bear-smilies-emoticons-2.zip') ?>">Download</a>
+    </div>
+</section>
 <?php $this->load->view('footer') ?>

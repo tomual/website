@@ -30,3 +30,4 @@ timeline/
 downloads/
 img/*/
 ezine/
+application/config/database.php

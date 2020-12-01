@@ -11,14 +11,14 @@
 		.cover {
 			width: 334px;
 			height: 246px;
-			background-image: url(/cuteigniter-master/img/covers/1.png);
+			background-image: url(<?php echo base_url('img/covers/1.png') ?>);
 			position: relative;
 			top: -209px;
 			left: 173px;
 		}
 
 		.main {
-			background-image: url(img/main.png);
+			background-image: url(<?php echo base_url('img/main.png') ?>);
 			background-repeat: no-repeat;
 			height: 312px;
 			width: 530px;

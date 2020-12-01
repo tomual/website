@@ -25,10 +25,6 @@
                 <th>Language</th>
                 <td>PHP 7 / HTML5 / CSS3 / jQuery</td>
             </tr>
-<!--             <tr>
-                <th>Sitemap</th>
-                <td><a href="">Go to sitemap &raquo;</a></td>
-            </tr> -->
         </tbody>
     </table>
 
