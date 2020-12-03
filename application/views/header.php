@@ -12,6 +12,6 @@
             src: url('<?php echo base_url('Volter.ttf') ?>')
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('style.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('style.css') ?>?v=1">
 </head>
 <body style="background-image: url(<?php echo base_url('img/bg.png') ?>);">

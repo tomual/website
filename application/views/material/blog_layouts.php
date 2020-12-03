@@ -17,11 +17,11 @@
             <li><a href="<?php echo base_url('material/blog-layouts') ?>">HTML Layouts</a></li>
         </ul>
     </nav>
-    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
-    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" class="back-to-bg">
+    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" class="back-to-text"></a>
 </nav>
 <section>
-    <img src="<?php echo base_url('img/sectiontop.png') ?>" style="position: absolute; top: -1px; left: 218px;">
+    <img src="<?php echo base_url('img/sectiontop.png') ?>" class="section-top">
     <img src="<?php echo base_url('img/pick.png') ?>" style="padding-top: 50px;">
     <h1>HTML Layouts</h1>
     <p>Themes to use for your personal site, Blogger, Wordpress, or Tumblr. These themes are in HTML can can be copied into the template field into the websites. Different HTML are used for each platform (the template for Blogger will not be functional for Wordpress etc), so the right one must be copied and pasted.</p>

@@ -155,3 +155,32 @@ a {
     background-position: top;
     margin: 1rem 0;
 }
+
+.back-to-bg {
+	position: fixed; 
+	bottom: 30px; 
+	left: 50px;
+}
+
+.back-to-text {
+	position: fixed; 
+	bottom: 29px;
+	left: 48px;
+}
+
+.section-top {
+	position: absolute; 
+	top: -1px; 
+	left: 218px;
+}
+
+.top-text {
+	padding-top: 50px;
+}
+
+.post-thumb {
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 50px;
+	background-size: cover;
+}

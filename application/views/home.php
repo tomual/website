@@ -70,7 +70,7 @@
 				<a href="<?php echo base_url('blog') ?>" style="background-image: url('<?php echo base_url('img/btn blog.png') ?>')"><li>blog</li></a>
 				<a href="<?php echo base_url('ezine') ?>" style="background-image: url('<?php echo base_url('img/btn ezine.png') ?>')"><li>ezine</li></a>
 				<a href="<?php echo base_url('about') ?>" style="background-image: url('<?php echo base_url('img/btn about.png') ?>')"><li>about</li></a>
-				<a href="<?php echo base_url('') ?>" disabled style="opacity: 0.5; background-image: url('<?php echo base_url('img/btn guestbook.png') ?>')"><li>guestbook</li></a>
+				<a href="<?php echo base_url('guestbook') ?>" style="background-image: url('<?php echo base_url('img/btn guestbook.png') ?>')"><li>guestbook</li></a>
 			</ul>
 		</div>
 		<div class="cover">

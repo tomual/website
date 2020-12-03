@@ -1,12 +1,12 @@
 <?php $this->load->view('header') ?>
 <nav id="side">
     <a href="<?php echo base_url('material') ?>"><img src="<?php echo base_url('img/header material.png') ?>"></a>
-    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
-    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" class="back-to-bg">
+    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" class="back-to-text"></a>
 </nav>
 <section>
-    <img src="<?php echo base_url('img/sectiontop.png') ?>" style="position: absolute; top: -1px; left: 218px;">
-    <img src="<?php echo base_url('img/pick.png') ?>" style="padding-top: 50px;"> 
+    <img src="<?php echo base_url('img/sectiontop.png') ?>" class="section-top">
+    <img src="<?php echo base_url('img/pick.png') ?>" class="top-text"> 
     <h1>Material</h1>
     <p>Miscellanious things that may or may not be useful to you.</p>
 

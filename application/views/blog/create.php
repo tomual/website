@@ -15,8 +15,8 @@
             <li><a href="sign">Sign</a></li>
         </ul>
     </nav>
-    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
-    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" class="back-to-bg">
+    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" class="back-to-text"></a>
 </nav>
 
 <h1>Create Post</h1>

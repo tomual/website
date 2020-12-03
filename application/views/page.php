@@ -15,8 +15,8 @@
             <li><a href="sign">Sign</a></li>
         </ul>
     </nav>
-    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
-    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" class="back-to-bg">
+    <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('img/footerhref.png') ?>" class="back-to-text"></a>
 </nav>
 <nav id="side">
     <a href="<?php echo base_url('material') ?>"><img src="<?php echo base_url('img/header material.png') ?>"></a>
@@ -34,11 +34,11 @@
             <li><a href="sign">Sign</a></li>
         </ul>
     </nav>
-    <img src="<?php echo base_url('img/footer.png') ?>" style="position: fixed; bottom: 30px; left: 50px;">
-    <a href="/../"><img src="<?php echo base_url('img/footerhref.png') ?>" style="position: fixed; bottom: 29px; left: 48px;"></a>
+    <img src="<?php echo base_url('img/footer.png') ?>" class="back-to-bg">
+    <a href="/../"><img src="<?php echo base_url('img/footerhref.png') ?>" class="back-to-text"></a>
 </nav>
-    <img src="<?php echo base_url('img/sectiontop.png') ?>" style="position: absolute; top: -1px; left: 218px;">
-    <img src="<?php echo base_url('img/pick.png') ?>" style="padding-top: 50px;"> 
+    <img src="<?php echo base_url('img/sectiontop.png') ?>" class="section-top">
+    <img src="<?php echo base_url('img/pick.png') ?>" class="top-text"> 
     <br><br>
     On the left sidebar is a list of materials available for use for a variety of purposes. Links back to the site if you use the materials will be appreciated.
     <br><br>
