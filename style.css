@@ -32,7 +32,11 @@ nav {
 	float: left;
 }
 
- ul {
+nav ul {
+    padding-left: 3rem;
+}
+
+ul {
 	list-style-type: square;
 	margin: 0;
 	padding-left: 1rem;

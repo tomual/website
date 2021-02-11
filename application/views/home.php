@@ -58,6 +58,16 @@
 			padding: 0;
 			margin: 0;
 		}
+
+		.updates {
+			bottom: 3px;
+			right: 4px;
+			position: absolute;
+			color: #e8edf5;
+			font-family: consolas, monospace;
+			font-size: 11px;
+			letter-spacing: 1px;
+		}
 	</style>
 </head>
 <body>
@@ -74,7 +84,8 @@
 			</ul>
 		</div>
 		<div class="cover">
-			<div class="updates"></div>
+			<div class="updates">2021-01-09 Software &middot; Godot Game</div>
+			<div class="updates" style="display:none">2020-12-01 Layout Update</div>
 		</div>
 	</div>
 </body>

@@ -60,6 +60,11 @@
             background-position: top-left;
             background-size: 140%;
         }
+        .thumbnail .mushroom-game {
+            background: url('<?php echo base_url('img/software/mushroom-game.png') ?>');
+            background-position: top-left;
+            background-size: 140%;
+        }
     </style>
         <h1>Software</h1>
         <p>Some web-based software that I made for fun. I love PHP so most of them are written in that language. All are open source on my Github account.</p>
@@ -72,26 +77,6 @@
             A ticketing system with a focus on keyboard shortcuts. Built using CodeIgniter and Tabler CSS.<br>
             <a href="https://github.com/tomual/tintin2/" target="_blank" class="button">View Github</a>
             <a href="https://github.com/tomual/tintin2/archive/master.zip" target="_blank" class="button">Download</a>
-        </div>
-
-        <div class="item">
-            <h2>Koi Authentication API</h2>
-            <a href="<?php echo base_url('img/software/koi.png') ?>" class="thumbnail">
-                <div class="koi"></div>
-            </a>
-            User signup/login API. Developer can set up multiple apps each with an API key to create/sign in users with. Written using Slim framework.<br>
-            <a href="https://github.com/tomual/koi-auth/" target="_blank" class="button">View Github</a>
-            <a href="https://github.com/tomual/koi-auth/archive/master.zip" target="_blank" class="button">Download</a>
-        </div>
-
-        <div class="item">
-            <h2>time-man</h2>
-            <a href="<?php echo base_url('img/software/timeman.png') ?>" class="thumbnail">
-                <div class="timeman"></div>
-            </a>
-            Windows application where user may enter tasks on a schedule. Every day when the time is up, it will show a windows notification. Written in C#.<br>
-            <a href="https://github.com/tomual/time-man/" target="_blank" class="button">View Github</a>
-            <a href="https://github.com/tomual/time-man/archive/master.zip" target="_blank" class="button">Download</a>
         </div>
 
         <div class="item">
@@ -115,6 +100,46 @@
         </div>
 
         <div class="item">
+            <h2>Mushroom Game</h2>
+            <a href="<?php echo base_url('img/software/mushroom-game.png') ?>" class="thumbnail">
+                <div class="mushroom-game"></div>
+            </a>
+            A small demo of a 2D game made with combat, maps, NPCs, monsters. Written using Godot engine (GDScript)<br>
+            <a href="https://github.com/tomual/mushroom-game" target="_blank" class="button">View Github</a>
+            <a href="https://github.com/tomual/mushroom-game/releases/tag/1" target="_blank" class="button">Download</a>
+        </div>
+
+        <div class="item">
+            <h2>Hestia</h2>
+            <a href="<?php echo base_url('img/software/hestia.png') ?>" class="thumbnail">
+                <div class="hestia"></div>
+            </a>
+            A passphrase-protected forum. Has authentication, a forum, profiles and groups. Written in Python on the Django framework.<br>
+            <a href="https://github.com/tomual/hestia/" target="_blank" class="button">View Github</a>
+            <a href="https://github.com/tomual/hestia/archive/master.zip" target="_blank" class="button">Download</a>
+        </div>
+
+        <div class="item">
+            <h2>Koi Authentication API</h2>
+            <a href="<?php echo base_url('img/software/koi.png') ?>" class="thumbnail">
+                <div class="koi"></div>
+            </a>
+            User signup/login API. Developer can set up multiple apps each with an API key to create/sign in users with. Written using Slim framework.<br>
+            <a href="https://github.com/tomual/koi-auth/" target="_blank" class="button">View Github</a>
+            <a href="https://github.com/tomual/koi-auth/archive/master.zip" target="_blank" class="button">Download</a>
+        </div>
+
+        <div class="item">
+            <h2>time-man</h2>
+            <a href="<?php echo base_url('img/software/timeman.png') ?>" class="thumbnail">
+                <div class="timeman"></div>
+            </a>
+            Windows application where user may enter tasks on a schedule. Every day when the time is up, it will show a windows notification. Written in C#.<br>
+            <a href="https://github.com/tomual/time-man/" target="_blank" class="button">View Github</a>
+            <a href="https://github.com/tomual/time-man/archive/master.zip" target="_blank" class="button">Download</a>
+        </div>
+
+        <div class="item">
             <h2>Tintin Ticketing</h2>
             <a href="<?php echo base_url('img/software/tintin.png') ?>" class="thumbnail">
                 <div class="tintin"></div>
@@ -132,16 +157,6 @@
             A blog with authentication, commenting, tags, custom pages, and searching. Made with PHP / CodeIgniter. Uses Hoaaard's UI Kit.<br>
             <a href="https://github.com/tomual/php-blog/" target="_blank" class="button">View Github</a>
             <a href="https://github.com/tomual/php-blog/archive/master.zip" target="_blank" class="button">Download</a>
-        </div>
-
-        <div class="item">
-            <h2>Hestia</h2>
-            <a href="<?php echo base_url('img/software/hestia.png') ?>" class="thumbnail">
-                <div class="hestia"></div>
-            </a>
-            A passphrase-protected forum. Has authentication, a forum, profiles and groups. Written in Python on the Django framework.<br>
-            <a href="https://github.com/tomual/hestia/" target="_blank" class="button">View Github</a>
-            <a href="https://github.com/tomual/hestia/archive/master.zip" target="_blank" class="button">Download</a>
         </div>
 
         <div class="item">

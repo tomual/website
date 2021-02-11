@@ -49,7 +49,7 @@ class Guestbook extends MY_Controller {
                 $this->email->from('contact@tomual.com');
                 $this->email->to('erikartoda@gmail.com');
                 $this->email->subject('Tomual Guestbook Submission');
-                $this->email->message("$name ($url) left a message on the guestbook.");
+                $this->email->message("Someone left a message on the guestbook.");
                 $this->email->send();
 
                 $this->load->view('guestbook/thankyou');

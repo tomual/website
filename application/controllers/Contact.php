@@ -44,7 +44,7 @@ class Contact extends CI_Controller {
 				$this->email->from('contact@tomual.com');
 				$this->email->to('erikartoda@gmail.com');
 				$this->email->subject('Tomual Contact Form Submission');
-				$this->email->message("$name ($email) says: $message");
+				$this->email->message("Someone submitted a contact form submission.");
 				$this->email->send();
 
     			redirect('contact/thankyou');
