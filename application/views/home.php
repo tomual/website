@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>tomual - personal site and laboratory</title>
-	<style>
-		body {
-			background-color: #486B9F;
-			margin: 0px;
-			padding: 0px;
-		}
-		.cover {
-			width: 334px;
-			height: 246px;
-			background-image: url(<?php echo base_url('img/covers/1.png') ?>);
-			position: relative;
-			top: -209px;
-			left: 173px;
-		}
-
-		.main {
-			background-image: url(<?php echo base_url('img/main.png') ?>);
-			background-repeat: no-repeat;
-			height: 312px;
-			width: 530px;
-			position: absolute;
-			top: 50%;
-			margin-top: -156px;
-			left:50%;
-			margin-left: -265px;
-		}
-
-		.menu {
-			position: relative;
-			left: 17px;
-			top: 86px;
-			height: 250px;
-			width: 150px;
-		}
-
-		.menu a {
-			background-repeat: no-repeat;
-			display: block;
-			height: 22px;
-			width: 138px;
-			margin-bottom: 8px;
-		}
-
-		.menu a:hover {
-			background-position: 1px 1px;
-		}
-
-		.menu li {
-			width: 0px;
-			overflow: hidden;
-		}
-
-		ul {
-			padding: 0;
-			margin: 0;
-		}
-
-		.updates {
-			bottom: 3px;
-			right: 4px;
-			position: absolute;
-			color: #e8edf5;
-			font-family: consolas, monospace;
-			font-size: 11px;
-			letter-spacing: 1px;
-		}
-	</style>
+    <title>Tomual</title>
 </head>
+<style>
+    body {
+        background: #99CCCC;
+        font-family: monospace;
+    }
+
+    .white {
+        margin: auto;
+        margin-top: 5%;
+        height: 680px;
+        width: 400px;
+        background: white;
+        padding: 24px;
+        box-sizing: border-box;
+        border-bottom: 10px solid #CCE6E6;
+    }
+
+    .banner {
+        background: #99CCCC;
+        height: 324px;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 12px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #001b6670;
+    }
+
+    .nav a {
+        border-bottom: 10px solid #BD8D82;
+        padding: 8px 24px;
+        background: #CCA699;
+        display: inline-block;
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 12px;
+        text-shadow: 1px 1px 2px #66000070;
+    }
+
+    .nav a:hover {
+        margin-top: 15px;
+        border-bottom-width: 7px;
+    }
+
+    .nav .yellow {
+        background: #CCCC99;
+        border-bottom-color: #BDAE82;
+    }
+
+    .nav .green {
+        background: #A6CC99;
+        border-bottom-color: #9CAE82;
+    }
+
+    .nav .teal {
+        background: #99CCB3;
+        border-bottom-color: #91AE98;
+    }
+
+    .nav .blue {
+        background: #99BFCC;
+        border-bottom-color: #91A3AE;
+    }
+
+    .exit {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        color: #FFF;
+        font-weight: bold;
+    }
+</style>
 <body>
-	<div class="main">
-		<div class="menu">
-			<ul>
-				<a href="<?php echo base_url('material') ?>" style="background-image: url('<?php echo base_url('img/btn material.png') ?>')"><li>material</li></a>
-				<a href="<?php echo base_url('software') ?>" style="background-image: url('<?php echo base_url('img/btn software.png') ?>')"><li>software</li></a>
-				<a href="<?php echo base_url('notes') ?>" style="background-image: url('<?php echo base_url('img/btn notes.png') ?>')"><li>notes</li></a>
-				<a href="<?php echo base_url('blog') ?>" style="background-image: url('<?php echo base_url('img/btn blog.png') ?>')"><li>blog</li></a>
-				<a href="<?php echo base_url('ezine') ?>" style="background-image: url('<?php echo base_url('img/btn ezine.png') ?>')"><li>ezine</li></a>
-				<a href="<?php echo base_url('about') ?>" style="background-image: url('<?php echo base_url('img/btn about.png') ?>')"><li>about</li></a>
-				<a href="<?php echo base_url('guestbook') ?>" style="background-image: url('<?php echo base_url('img/btn guestbook.png') ?>')"><li>guestbook</li></a>
-			</ul>
-		</div>
-		<div class="cover">
-			<div class="updates">2021-01-09 Software &middot; Godot Game</div>
-			<div class="updates" style="display:none">2020-12-01 Layout Update</div>
-		</div>
-	</div>
+    <div class="white">
+        <div class="banner">
+            <h1>Tomual</h1>
+        </div>
+        <div class="nav">
+            <a href="<?php echo base_url('material') ?>" class="red">material</a><br>
+            <a href="<?php echo base_url('software') ?>" class="yellow">software</a><br>
+            <a href="<?php echo base_url('blog') ?>" class="green">blog</a><br>
+            <a href="<?php echo base_url('ezine') ?>" class="teal">ezine</a><br>
+            <a href="<?php echo base_url('about') ?>" class="blue">about</a><br>
+        </div>
+        <div class="exit"><a href="<?php echo base_url('exit') ?>">exit ---></a></div>
+    </div>
 </body>
 </html>

@@ -1,56 +1,39 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-if ( ! function_exists('close_tags'))
+function alerts()
 {
-	function close_tags($html)
-	{
-        preg_match_all('#<(img|br|hr|input)*[^>]*$#iU', $html, $result);
-        if(!empty($result[1]))
-        {
-            $html .= "\">";
-        }
-        preg_match_all('#<(?!meta|img|br|hr|input\b)\b([a-z]+)(?: .*)?(?<![/|/ ])>#iU', $html, $result);
-        $openedtags = $result[1];
-        preg_match_all('#</([a-z]+)>#iU', $html, $result);
-        $closedtags = $result[1];
-        $len_opened = count($openedtags);
-        if (count($closedtags) == $len_opened) {
-            return $html;
-        }
-        $openedtags = array_reverse($openedtags);
-        for ($i=0; $i < $len_opened; $i++) {
-            if (!in_array($openedtags[$i], $closedtags)) {
-                $html .= '</'.$openedtags[$i].'>';
-            } else {
-                unset($closedtags[array_search($openedtags[$i], $closedtags)]);
-            }
-        }
-        return $html;
-	}
-}
-
-function set_meta($key, $data) {
-    $CI =& get_instance();
-    $CI->{$key} = $data;
-}
-
-function has_meta($key) {
-    $CI =& get_instance();
-    if(isset($CI->{$key}))
-    {
-        return true;
+    $ci = &get_instance();
+    $close = '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+    if ($ci->session->flashdata('error')) {
+        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">' . $ci->session->flashdata('error') . $close . '</div>';
     }
-    return false;
+    if ($ci->session->flashdata('warning')) {
+        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">' . $ci->session->flashdata('warning') . $close . '</div>';
+    }
+    if ($ci->session->flashdata('info')) {
+        echo '<div class="alert alert-info alert-dismissible fade show" role="alert">' . $ci->session->flashdata('info') . $close . '</div>';
+    }
+    if ($ci->session->flashdata('success')) {
+        echo '<div class="alert alert-success alert-dismissible fade show" role="alert">' . $ci->session->flashdata('success') . $close . '</div>';
+    }
 }
 
-function get_meta($key) {
-    $CI =& get_instance();
-    if(has_meta($key))
-    {
-        $meta = $CI->{$key};
-        $CI->{$key} = '';
-        return $meta;
-    }
-    return null;
+function set_title($title)
+{
+    $ci = &get_instance();
+    $ci->title = $title;
+}
+
+function get_title()
+{
+    $ci = &get_instance();
+    return $ci->title ?? null;
+}
+
+function dd($item)
+{
+    echo '<pre>';
+    print_r($item);
+    echo '</pre>';
 }
