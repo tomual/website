@@ -1,7 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
 
 <h1>Feed Me</h1>
 <br />
@@ -168,7 +165,5 @@ Feed Me
 <img src="<?php echo base_url('img/material/layout/feedme/bg.png') ?>">
 <br /><br />
 <img src="<?php echo base_url('img/material/layout/feedme/menubg.png') ?>">
-    </div>
-</div>
 <?php $this->load->view('footer') ?>
 

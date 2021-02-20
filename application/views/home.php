@@ -4,95 +4,120 @@
     <title>Tomual</title>
 </head>
 <style>
-    body {
-        background: #99CCCC;
-        font-family: monospace;
-    }
-
-    .white {
-        margin: auto;
-        margin-top: 5%;
-        height: 680px;
+    .container {
         width: 400px;
-        background: white;
-        padding: 24px;
-        box-sizing: border-box;
-        border-bottom: 10px solid #CCE6E6;
-    }
-
-    .banner {
-        background: #99CCCC;
-        height: 324px;
+        height: 500px;
+        margin: auto;
+        margin-top: 10%;
+        position: relative;
     }
 
     h1 {
         margin: 0;
+        padding: 0;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .white {
+        border: 1px solid #000;
         padding: 12px;
-        color: #FFF;
-        text-shadow: 1px 1px 1px #001b6670;
+        margin: 6px 0;
+    }
+
+    .banner {
+        height: 100px;
+        border: 1px solid black;
+        background: #666;
+        text-align: end;
+        padding: 12px;
     }
 
     .nav a {
-        border-bottom: 10px solid #BD8D82;
-        padding: 8px 24px;
-        background: #CCA699;
         display: inline-block;
-        color: #FFF;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 13px;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-top: 12px;
-        text-shadow: 1px 1px 2px #66000070;
-    }
-
-    .nav a:hover {
-        margin-top: 15px;
-        border-bottom-width: 7px;
-    }
-
-    .nav .yellow {
-        background: #CCCC99;
-        border-bottom-color: #BDAE82;
-    }
-
-    .nav .green {
-        background: #A6CC99;
-        border-bottom-color: #9CAE82;
-    }
-
-    .nav .teal {
-        background: #99CCB3;
-        border-bottom-color: #91AE98;
-    }
-
-    .nav .blue {
-        background: #99BFCC;
-        border-bottom-color: #91A3AE;
-    }
-
-    .exit {
-        position: absolute;
-        bottom: 12px;
-        right: 12px;
-        color: #FFF;
+        letter-spacing: 1px;
         font-weight: bold;
+        color: black;
+        text-decoration: none;
+        margin-top: 12px;
+        border-bottom: 1px dotted black;
+    }
+
+    .updates {
+        width: 340px;
+        margin-left: 60px;
+        overflow: hidden;
+        height: 14px;
+    }
+
+    .update {
+        display: inline;
+        margin-right: 24px;
+    }
+
+    .updates {
+        /* margin-top: 6px; */
+    }
+
+    .item-desc {
+        font-size: 12px;
+    }
+
+    img {
+        position: absolute;
+        height: 670px;
+        top: -130px;
+        pointer-events: none;
+        left: -145px;
+    }
+
+    .title {
+        margin-left: 110px;
     }
 </style>
 <body>
-    <div class="white">
-        <div class="banner">
+    <div class="container">
+        <img src="<?php echo base_url('img/cattom.png') ?>">
+        <div class="title">
             <h1>Tomual</h1>
+            <div class="subtitle">Personal site and laboratory</div>
         </div>
-        <div class="nav">
-            <a href="<?php echo base_url('material') ?>" class="red">material</a><br>
-            <a href="<?php echo base_url('software') ?>" class="yellow">software</a><br>
-            <a href="<?php echo base_url('blog') ?>" class="green">blog</a><br>
-            <a href="<?php echo base_url('ezine') ?>" class="teal">ezine</a><br>
-            <a href="<?php echo base_url('about') ?>" class="blue">about</a><br>
+
+        <div class="white">
+            <div class="banner">
+                lost heroes ver.
+            </div>
+            <div class="nav">
+                <div class="item" style="margin-left: 60px">
+                    <a href="<?php echo base_url('material') ?>">material</a>
+                    <div class="item-desc">materials for your website or other projects</div>
+                </div>
+                <div class="item" style="margin-left: 70px">
+                    <a href="<?php echo base_url('software') ?>">software</a>
+                    <div class="item-desc">web applications made by tom</div>
+                </div>
+                <div class="item" style="margin-left: 60px">
+                    <a href="<?php echo base_url('blog') ?>">blog</a>
+                    <div class="item-desc">programming and personal notes</div>
+                </div>
+                <div class="item" style="margin-left: 60px">
+                    <a href="<?php echo base_url('ezine') ?>">ezine</a>
+                    <div class="item-desc">electronic magazine of games tom has played</div>
+                </div>
+                <div class="item" style="margin-left: 50px">
+                    <a href="<?php echo base_url('about') ?>">about</a>
+                    <div class="item-desc">about the website and webmaster</div>
+                </div>
+            </div>
         </div>
-        <div class="exit"><a href="<?php echo base_url('exit') ?>">exit ---></a></div>
+        <marquee class="updates">
+            <div class="update">2021-01-09 · Software Godot Game</div>
+            <div class="update">2021-01-09 · Software Godot Game</div>
+            <div class="update">2021-01-09 · Software Godot Game</div>
+        </marquee>
     </div>
 </body>
 </html>

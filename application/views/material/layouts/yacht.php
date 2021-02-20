@@ -1,7 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
 
 <h1>Yacht</h1>
 <br />
@@ -127,7 +124,5 @@ nav a:hover{
 <img src="<?php echo base_url('img/material/layout/yacht/yacht.png') ?>">
 <br /><br />
 <img src="<?php echo base_url('img/material/layout/yacht/bg.png') ?>">
-    </div>
-</div>
 <?php $this->load->view('footer') ?>
 

@@ -1,7 +1,5 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
+
         <h1>HTML Layouts</h1>
         <p>Themes to use for your personal site, Blogger, Wordpress, or Tumblr. These themes are in HTML can can be copied into the template field into the websites. Different HTML are used for each platform (the template for Blogger will not be functional for Wordpress etc), so the right one must be copied and pasted.</p>
 
@@ -40,6 +38,4 @@
         <a href="<?php echo base_url('material/layouts/yacht') ?>"><img src="<?php echo base_url('img/material/layout/yacht.png') ?>" class="border"></a>
 
         <br><br>
-    </div>
-</div>
 <?php $this->load->view('footer') ?>

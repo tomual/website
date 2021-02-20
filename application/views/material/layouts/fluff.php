@@ -1,7 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
 
 <h1>Fluff</h1>
 <br />
@@ -120,7 +117,5 @@ A compact, cute, one-box layout. Suggested for one post per page.
 <img src="<?php echo base_url('img/material/layout/fluff/polar.png') ?>">
 <br /><br />
 <img src="<?php echo base_url('img/material/layout/fluff/bg.png') ?>">
-    </div>
-</div>
 <?php $this->load->view('footer') ?>
 

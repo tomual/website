@@ -1,7 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
 
 <h1>Hyperion</h1>
 <br />
@@ -1230,7 +1227,6 @@ color: #000;
 <img src="<?php echo base_url('img/material/layout/hyperion/meteor.gif') ?>">
 <br /><br />
 <img src="<?php echo base_url('img/material/layout/hyperion/bg.png') ?>">
-    </div>
-</div>
+
 <?php $this->load->view('footer') ?>
 

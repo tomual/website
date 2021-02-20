@@ -1,7 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
 
 <h1>Neighbour</h1>
 <br />
@@ -1047,7 +1044,5 @@ article {
 <img src="<?php echo base_url('img/material/layout/neighbour/banner.jpg') ?>">
 <br /><br />
 <img src="<?php echo base_url('img/material/layout/neighbour/headerbg.png') ?>">
-    </div>
-</div>
 <?php $this->load->view('footer') ?>
 

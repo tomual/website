@@ -4,125 +4,143 @@
     <title><?php echo get_title() ? get_title() . ' | ' : null ?>Tomual</title>
 </head>
 <style>
-    @font-face {
-      font-family: 'Source Sans Pro';
-      src: URL('http://localhost/soft-tomual/fonts/SourceSansPro-Regular.ttf') format('truetype');
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: lucida grande,verdana,arial,helvetica;
+        font-size: 12px;
+    }
+    .outer {
+        width: 1000px;
+        margin: auto;
+    }
+    .header {
+        background: #666;
+        width: 100%;
+        height: 160px;
+        border: 1px solid black;
+    }
+    .white {
+        background: #FFF;
+        border: 1px solid black;
+        padding: 24px;
+        min-height: calc(100vh - 280px);
+    }
+    .nav-item {
+        display: inline-block;
+        border: 1px solid #000;
+        position: relative;
+        padding: 12px 24px;
+        bottom: -1px;
+        margin-top: 24px;
+    }
+    .nav-item.active {
+        border-bottom: 1px solid #FFF;
+    }
+    .content {
+        width: 680px;
+        float: left;
+    }
+    .side {
+        width: 250px;
+        float: right;
+    }
+    .clear {
+        clear: both;
+    }
+    .updates {
+        background: #EEE;
+        padding: 12px;
+        height: 200px;
+    }
+    textarea.code {
+        background: #000;
+        color: #FFF;
+        font-family: monospace;
+        padding: 12px;
+        width: 100%;
+    }
+    .breadcrumbs {
+        background: #EEE;
+        display: inline-block;
+        padding: 3px 6px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #666;
     }
 
-    body {
-        background: #99CCCC;
-        font-family: 'Source Sans Pro', Calibri;
-        color: #323a3a;
-        padding: 0;
-        margin: 0;
+    .breadcrumbs a {
+        text-decoration: none;
+        color: #666;
+        font-weight: bold;
+    }
+
+    .nav a {
+
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
         font-size: 14px;
     }
-
     h1 {
-        margin: 0;
-    }
-
-    li {
-        line-height: 1.5rem;
-    }
-
-    h2, h3, h4, h5 {
-        font-size: inherit;
-    }
-
-    .container {
-        box-sizing: border-box;
-        margin-left: 260px;
-        overflow: auto;
-        margin-top: 50px;
-    }
-
-    .side {
-        position: fixed;
-        width: 255px;
-        top: 0;
-        bottom: 0;
-        background-repeat: repeat-y;
-        background-position: right;
+        background: #000;
         color: #FFF;
-        padding: 48px 24px;
-        padding-bottom: 24px;
-        box-sizing: border-box;
-        font-family: monospace;
-        display: flex;
-        flex-direction: column;
-        text-shadow: 1px 1px 1px #001b6670;
-    }
-
-    .side img {
-        margin-top: auto;
-        width: 110px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .side a {
-        color: #FFF;
-        text-decoration: none;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-    }
-
-    .side a:hover {
-        text-decoration: underline;
-    }
-
-    .page-title {
-        font-size: 2em;
-        font-weight: bold;
-        color: #FFF;
-    }
-
-    .content {
-        width: 580px;
-        background: white;
-        padding: 48px;
-        padding-right: 48px;
-    }
-
-    ul.material {
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .side ul {
-        position: relative;
-        list-style: none;
-        margin-left: 0;
-        padding-left: 1.2em;
-    }
-    .side ul li:before {
-        content: "+";
-        position: absolute;
-        left: 0;
-    }
-
-    .back {
-        border-bottom: 10px solid #BD8D82;
-        padding: 8px 24px;
-        background: #CCA699;
-        display: inline-block;
-        color: #FFF;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 13px;
+        font-size: 14px;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-top: 12px;
-        text-shadow: 1px 1px 2px #66000070;
-        text-align: center;
+        letter-spacing: 1px;
+        padding: 3px 6px;
     }
 
-    .back:hover {
-        margin-top: 15px;
-        border-bottom-width: 7px;
+    h2 {
+        font-size: 1em;
+        border-bottom: 1px dotted #000;
+    }
+    .border {
+        border: 1px solid #000;
+    }
+
+    /* SOFTWARE*/
+    .thumbnail > div {
+        height: 85px;
+        width: 145px;
+        border: 1px dashed #000;
+        vertical-align: middle;
+        background-size: 160%;
+        background-position: top;
+        float: left;
+        margin-right: 14px;
+    }
+
+    .item {
+        margin-bottom: 24px;
+        min-height: 110px;
+    }
+
+    .item-small {
+        margin-bottom: 24px;
+    }
+    h2 a {
         text-decoration: none;
+        color: #000;
     }
-
+    .post-info {
+        font-style: italic;
+        margin-bottom: 12px;
+    }
 </style>
 <body>
+    <div class="outer">
+        <div class="header"></div>
+        <div class="nav">
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'material' ? 'active' : null ?>" href="<?php echo base_url('material') ?>">material</a>
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'software' ? 'active' : null ?>" href="<?php echo base_url('software') ?>">software</a>
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'blog' ? 'active' : null ?>" href="<?php echo base_url('blog') ?>">blog</a>
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'ezine' ? 'active' : null ?>" href="<?php echo base_url('ezine') ?>">ezine</a>
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'about' ? 'active' : null ?>" href="<?php echo base_url('about') ?>">about</a>
+        </div>
+        <div class="white">
+            <div class="main">
+                <div class="content">
+                    <?php echo get_breadcrumbs() ?>
+                    

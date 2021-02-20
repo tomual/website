@@ -1,7 +1,5 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
+
 
         <h1>Bullet Icons</h1>
         <p>HTML list-style-image images for bullet point lists.</p>
@@ -59,6 +57,4 @@
         <br><br>
         <img src="<?php echo base_url('img/material/bullet/list-style-image-heart-star.png') ?>" class="dotted aa">&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('downloads/bullets/list-style-image-heart-star.zip') ?>">Download</a>
         <br><br>
-    </div>
-</div>
 <?php $this->load->view('footer') ?>

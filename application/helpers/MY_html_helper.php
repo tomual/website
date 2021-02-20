@@ -37,3 +37,32 @@ function dd($item)
     print_r($item);
     echo '</pre>';
 }
+
+function set_breadcrumbs($breadcrumbs)
+{
+    $ci = &get_instance();
+    $ci->breadcrumbs = $breadcrumbs;
+}
+
+function get_breadcrumbs()
+{
+    $ci = &get_instance();
+    if (!empty($ci->breadcrumbs)) {
+        $html = '<div class="breadcrumbs">';
+        $i = 0;
+        foreach ($ci->breadcrumbs as $key => $value) {
+            if ($i == 0) {
+                $html .= "<a href='$value'>$key</a>";
+            } else {
+                if (!$value) {
+                    $html .= " » $key";
+                } else {
+                    $html .= " » <a href='$value'>$key</a>";
+                }
+            }
+            $i++;
+        }
+        $html .= '</div>';
+    }
+    return $html ?? null;
+}

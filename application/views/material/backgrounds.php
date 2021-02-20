@@ -1,7 +1,5 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
+
         <h1>Backgrounds</h1>
         <p>Tiled background images for use on your website. To use, right-click the image and select "Save As" to your computer.</p>
         <p>Click on a backgorund to preview it on this page.</p>
@@ -71,6 +69,4 @@
         <img src="<?php echo base_url('img/material/background/tiled-background-pixel-night-sky-light.png') ?>" class="tiled">
         <img src="<?php echo base_url('img/material/background/tiled-background-pixel-night-sky.png') ?>" class="tiled">
         <br><br>
-    </div>
-</div>
 <?php $this->load->view('footer') ?>

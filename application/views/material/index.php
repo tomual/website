@@ -1,67 +1,27 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
-        <h1>Page Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2>Second title thing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <ul>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-        </ul>
-        <h2>Second title thing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <ul>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-        </ul>
-        <h2>Second title thing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <ul>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-        </ul>
-        <h2>Second title thing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <ul>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-            <li>Testing</li>
-        </ul>
-    </div>
-    
-</div>
+<h1>Material</h1>
+<p>Below is a list of resources you could use for your website or creative project. The materials are free for personal and commercial use.</p>
+<p>Click on an item below to continue!</p>
+<ul class="material">
+    <li>
+        <a href="<?php echo base_url('material/graphics') ?>">Graphics</a><br>
+        <small>Small illustrations of various things</small><br><br>
+    </li>
+    <li>
+        <a href="<?php echo base_url('material/backgrounds') ?>">Backgrounds</a><br>
+        <small>Tiled background graphics for a webpage</small><br><br>
+    </li>
+    <li>
+        <a href="<?php echo base_url('material/bullets') ?>">Bullets</a><br>
+        <small>Bullet point graphics for HTML lists</small><br><br>
+    </li>
+    <li>
+        <a href="<?php echo base_url('material/emoticons') ?>">Emoticons</a><br>
+        <small>Emoticon graphics for blogs</small><br><br>
+    </li>
+    <li>
+        <a href="<?php echo base_url('material/layouts') ?>">Layouts</a><br>
+        <small>Static HTML layouts to use as a blog or personal site</small><br><br>
+    </li>
+</ul>
 <?php $this->load->view('footer') ?>

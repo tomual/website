@@ -1,8 +1,4 @@
 <?php $this->load->view('header') ?>
-<?php $this->load->view('material/menu') ?>
-<div class="container">
-    <div class="content">
-
 <h1>Gone Home</h1>
 <br />
 <img src="<?php echo base_url('img/material/layout/gone.png') ?>" class="border">
@@ -142,7 +138,5 @@ A simple white layout witha customiseable banner image. Navigation on right bar.
 </textarea>
 
 <p>Copy and paste the code above to your HTML file, or the template/theme edit text box.</p>
-    </div>
-</div>
 <?php $this->load->view('footer') ?>
 
