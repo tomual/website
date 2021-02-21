@@ -1,18 +1,8 @@
             </div>
             <div class="side">
-                <div class="updates">
-                    <div class="update">
-                        <b>Test update thing</b>
-                        <small>2021-02-21</small>
-                    </div>
-                    <div class="update">
-                        <b>Test update thing</b>
-                        <small>2021-02-21</small>
-                    </div>
-                    <div class="update">
-                        <b>Test update thing</b>
-                        <small>2021-02-21</small>
-                    </div>
+                <div class="side-box">
+                    <b>Site under maintenance</b>
+                    <p>There'll be content here eventually probably</p>
                 </div>
             </div>
             <div class="clear"></div>

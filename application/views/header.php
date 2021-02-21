@@ -19,6 +19,8 @@
         width: 100%;
         height: 160px;
         border: 1px solid black;
+        background-image: url(<?php echo base_url('img/bannerino.png') ?>);
+        background-size: cover;
     }
     .white {
         background: #FFF;
@@ -32,7 +34,6 @@
         position: relative;
         padding: 12px 24px;
         bottom: -1px;
-        margin-top: 24px;
     }
     .nav-item.active {
         border-bottom: 1px solid #FFF;
@@ -48,7 +49,7 @@
     .clear {
         clear: both;
     }
-    .updates {
+    .side-box {
         background: #EEE;
         padding: 12px;
         height: 200px;
@@ -77,11 +78,12 @@
     }
 
     .nav a {
-
         color: #000;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 14px;
+        letter-spacing: 1px;
+        font-size: 11px;
+        font-weight: bold;
     }
     h1 {
         background: #000;
@@ -128,16 +130,51 @@
         font-style: italic;
         margin-bottom: 12px;
     }
+    .nav-item.nav-top {
+        border: none;
+    }
+    .site-title {
+        background: #FFF;
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        left: -1px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .site-title a {
+        color: #000;
+        text-decoration: none;
+    }
+    .update {
+        display: inline;
+        margin-right: 24px;
+    }
+    .updates {
+        font-size: 11px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
 </style>
 <body>
     <div class="outer">
-        <div class="header"></div>
+        <div class="header">
+            <div class="site-title"><a href="<?php echo base_url() ?>">Tomual</a></div>
+        </div>
+
+        <marquee class="updates">
+            <div class="update">2021-02-21 · Layout Update</div>
+            <div class="update">2021-01-09 · Software Godot Game</div>
+        </marquee>
         <div class="nav">
             <a class="nav-item <?php echo $this->router->fetch_class() == 'material' ? 'active' : null ?>" href="<?php echo base_url('material') ?>">material</a>
             <a class="nav-item <?php echo $this->router->fetch_class() == 'software' ? 'active' : null ?>" href="<?php echo base_url('software') ?>">software</a>
             <a class="nav-item <?php echo $this->router->fetch_class() == 'blog' ? 'active' : null ?>" href="<?php echo base_url('blog') ?>">blog</a>
-            <a class="nav-item <?php echo $this->router->fetch_class() == 'ezine' ? 'active' : null ?>" href="<?php echo base_url('ezine') ?>">ezine</a>
+            <a class="nav-item <?php echo $this->router->fetch_class() == 'ezine' ? 'active' : null ?>" href="<?php echo base_url('ezine/intro') ?>">ezine</a>
             <a class="nav-item <?php echo $this->router->fetch_class() == 'about' ? 'active' : null ?>" href="<?php echo base_url('about') ?>">about</a>
+            <a class="nav-item nav-top <?php echo $this->router->fetch_class() == 'about' ? 'active' : null ?>" href="<?php echo base_url() ?>">top</a>
         </div>
         <div class="white">
             <div class="main">

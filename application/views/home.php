@@ -4,6 +4,11 @@
     <title>Tomual</title>
 </head>
 <style>
+    body {
+        font-family: lucida grande,verdana,arial,helvetica;
+        font-size: 12px;
+    }
+    
     .container {
         width: 400px;
         height: 500px;
@@ -114,8 +119,7 @@
             </div>
         </div>
         <marquee class="updates">
-            <div class="update">2021-01-09 · Software Godot Game</div>
-            <div class="update">2021-01-09 · Software Godot Game</div>
+            <div class="update">2021-02-21 · Layout Update</div>
             <div class="update">2021-01-09 · Software Godot Game</div>
         </marquee>
     </div>

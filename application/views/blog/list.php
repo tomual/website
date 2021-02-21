@@ -1,8 +1,9 @@
 <?php $this->load->view('header') ?>
 
 <h1>Blog</h1>
-<p>Some web-based software that I've made as a hobby. I love PHP so most of them are written in that language. All are open source on my Github account.</p>
-<p>Posts about projects or general web development</p>
+<p>Blog posts about my programming adventures and other matters.</p>
+<a href="<?php echo base_url('blog/archive') ?>">View archive</a>
+<br><br>
 <div class="posts">
     <?php foreach ($posts as $post) : ?>
         <div class="post">
