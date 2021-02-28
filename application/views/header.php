@@ -19,6 +19,9 @@
             font-family: lucida grande,verdana,arial,helvetica;
             font-size: 12px;
         }
+        img {
+            max-width: 100%;
+        }
         .outer {
             width: 1000px;
             margin: auto;
@@ -62,7 +65,7 @@
         .side-box {
             background: #EEE;
             padding: 12px;
-            height: 200px;
+            min-height: 200px;
         }
         textarea.code {
             background: #000;
@@ -169,6 +172,16 @@
             right: 20px;
             top: 57px;
         }
+        .post-content img {
+            max-width: 90%;
+        }
+        .muted {
+            opacity: 0.3;
+        }
+        .recent-image img {
+            width: 50px;
+            border: 1px solid;
+        }
     </style>
 </head>
 <body>
@@ -179,11 +192,7 @@
                 <div class="subtitle">Personal site and laboratory</div>
             </div>
         </div>
-
-        <marquee class="updates">
-            <div class="update">2021-02-21 · Layout Update</div>
-            <div class="update">2021-01-09 · Software Godot Game</div>
-        </marquee>
+        <?php $this->load->view('updates') ?>
         <div class="nav">
             <a class="nav-item <?php echo $this->router->fetch_class() == 'material' ? 'active' : null ?>" href="<?php echo base_url('material') ?>">material</a>
             <a class="nav-item <?php echo $this->router->fetch_class() == 'software' ? 'active' : null ?>" href="<?php echo base_url('software') ?>">software</a>
